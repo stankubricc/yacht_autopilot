@@ -137,7 +137,7 @@ class Autopilot:
                 self.heading = self.route_legs[self.current_leg_index].azimuth
                 self.next_port = self.route_legs[self.current_leg_index].end_port
 
-                time_to_next_port = self.calculate_time(self.distance_to_next_port, 10)  # Przykładowa prędkość 10 km/h
+                time_to_next_port = self.calculate_time(self.distance_to_next_port, 10)  
                 print("Czas do następnego portu:", round(time_to_next_port, 2), "godz.")
 
             self.print_status()
